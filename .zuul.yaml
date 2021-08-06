@@ -1,6 +1,5 @@
 - job:
     name: testjob
-    parent: base
     run: playbooks/testjob.yaml
 
 - project:
