@@ -10,3 +10,9 @@
     gate:
       jobs:
         - testjob
+    post:
+      jobs:
+        - testjob
+    tag:
+      jobs:
+        - testjob
