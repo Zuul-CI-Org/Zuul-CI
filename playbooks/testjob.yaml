@@ -1,4 +1,10 @@
 - hosts: all
+  roles:
+    - role: ensure-python
+      vars:
+        python_version: "3.6"
+    - role: ensure-curl
+    - role: ensure-rust
   tasks:
     - debug:
         msg: Hello world!
