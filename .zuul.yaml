@@ -1,6 +1,5 @@
 - job:
     name: testjob
-    parent: base
     run: playbooks/testjob.yaml
 
 - project:
@@ -12,7 +11,7 @@
         - testjob
     post:
       jobs:
-        - demo-job
+        - testjob
     tag:
       jobs:
-        - demo-job
+        - testjob

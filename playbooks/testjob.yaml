@@ -1,4 +1,12 @@
 - hosts: all
+  roles:
+    - role: ensure-python
   tasks:
     - debug:
         msg: Hello world!
+    - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
+      file:
+        path: /home/test.txt
+        state: touch
+        mode: u=rw,g=r,o=r
+        
