@@ -1,4 +1,7 @@
 - hosts: all
+  roles:
+    - role: ensure-python
   tasks:
     - debug:
         msg: Hello world!
+        
